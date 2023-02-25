@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  color: #777;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blockquote {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $lightgreen;
+  border-radius: 5px;
+}
+
+.headline-primary {
+  color: $lightgreen;
+  margin-left: 10px;
+}
+
+.headline-secondary {
+  color: $color-gray;
+}
+
+.link {
+  color: $color-aqua;
+}

@@ -1,0 +1,6 @@
+// lightens background color when user hovers over
+@mixin bg-lighten($bg-color, $amount) {
+  &:hover {
+    background-color: lighten($bg-color, $amount);
+  }
+}
