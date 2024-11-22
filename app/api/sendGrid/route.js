@@ -2,6 +2,7 @@
 const sgMail = require('@sendgrid/mail')
 
 export async function POST(data) {
+
     let key = process.env.API_KEY
 
     // form data
@@ -9,8 +10,7 @@ export async function POST(data) {
 
     try {
         sgMail.setApiKey(key);
-
-
+        
         const msg = {
             to: 'jonacosta86@gmail.com',
             from: 'jonacosta86@gmail.com', // Use the email address or domain you verified above
