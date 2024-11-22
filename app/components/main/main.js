@@ -48,6 +48,7 @@ export default function Main(props) {
 
         alert("Form submitted")
         await response.json()
+        console.log(response)
 
     }
 

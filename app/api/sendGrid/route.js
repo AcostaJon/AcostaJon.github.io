@@ -1,7 +1,8 @@
-// send grid mail object
-const sgMail = require('@sendgrid/mail')
+
 
 export async function POST(data) {
+    // send grid mail object
+    const sgMail = require('@sendgrid/mail')
 
     let key = process.env.API_KEY
 
@@ -10,7 +11,7 @@ export async function POST(data) {
 
     try {
         sgMail.setApiKey(key);
-        
+
         const msg = {
             to: 'jonacosta86@gmail.com',
             from: 'jonacosta86@gmail.com', // Use the email address or domain you verified above
@@ -24,6 +25,6 @@ export async function POST(data) {
         console.error(error);
     }
 
-    return Response.json('success')
+    return Response.json({ success: formData })
 
 }
