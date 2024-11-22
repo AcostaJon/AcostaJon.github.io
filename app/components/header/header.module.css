@@ -1,0 +1,32 @@
+/* header component css */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.collapse{
+    background-color: rgba(0, 0, 0, 0.952);
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.collapse a:last-of-type{
+    margin-top: 10px;
+    color: rgb(218, 160, 2);
+}
+.collapse a:last-of-type:hover{
+   background-color: rgb(218, 160, 2);
+   color: black;
+}
+
+@media only screen and (min-width:992px) {
+    .collapse{
+        background-color: rgba(0, 0, 0, 0);
+        padding:0;
+        margin-top: 0;
+    }
+    .collapse a:last-of-type{
+        margin-top: 0;
+    }
+}

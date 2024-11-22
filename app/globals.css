@@ -1,0 +1,229 @@
+/* global css */
+
+/* animations */
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-hor-bottom {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes wobble-hor-bottom {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-15px) rotate(-3deg);
+    transform: translateX(-15px) rotate(-3deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(8px) rotate(3deg);
+    transform: translateX(8px) rotate(3deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(-8px) rotate(-2.6deg);
+    transform: translateX(-8px) rotate(-2.6deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(6px) rotate(1.4deg);
+    transform: translateX(6px) rotate(1.4deg);
+  }
+
+  75% {
+    -webkit-transform: translateX(-3px) rotate(-.8deg);
+    transform: translateX(-3px) rotate(-.8deg);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) .3s both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) .3s both;
+}
+
+
+/* body html */
+body,
+html {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  z-index: 0;
+  position: relative;
+}
+
+/* all svg images wrapped in a link */
+a svg {
+  fill: grey;
+  width: 50px;
+}
+
+a svg:hover {
+  fill: white;
+  -webkit-animation: wobble-hor-bottom 1.2s both;
+  animation: wobble-hor-bottom 1.2s both;
+  cursor: pointer;
+}
+
+/* section 3 in main content: accordion dropdown body */
+.accordion-body {
+  overflow-y: scroll;
+  max-height: 600px;
+}
+
+
+/* background images for each project listed */
+#reelBuzzProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/reelBuzz.PNG');
+}
+
+#twoMuchTwoSayProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/twomuchtwosay.png');
+}
+
+#windBreakerProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/windBreaker.png');
+}
+
+#employeeDirectoryProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/employeedir.png');
+}
+
+#businessConsultProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/jamesConsultant.png');
+}
+
+#skyLineProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/skyline.png');
+}
+
+#userDashboardProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/userDashboard.png');
+}
+
+#gameShowProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/gameshow.png');
+}
+
+#photoGalleryProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/photoGallery.png');
+}
+
+#magentoProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/magento.png');
+}
+
+#blossomKitchenProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/blossomkitchen.png');
+}
+
+#webStyleGuideProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/webstyleguide.png');
+}
+
+#registrationFormProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/signUpForm.png');
+}
+
+#studentPortfolioProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/studentPortfolio.png');
+}
+
+#clientResumeProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/clientResume.png');
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:992px) {
+
+  /* section 3 in main content: display each accordion at 33% width */
+  .accordion {
+    width: 33%;
+  }
+
+  /* section 3 in main content: accordion dropdown body */
+  .accordion-body {
+    overflow-y: scroll;
+    max-height: 500px;
+  }
+
+}

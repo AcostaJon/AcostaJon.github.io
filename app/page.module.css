@@ -1,0 +1,134 @@
+/* homepage css */
+/* animations */
+
+@keyframes drop {
+    0% {
+        top: -50%
+    }
+
+    100% {
+        top: 110%
+    }
+}
+/* home page container */
+.home {
+    background-color: #050f26;
+    z-index: 1;
+    position: relative;
+}
+
+/*hide side bars- mobile devices do not display sidebars */
+.home section,
+.home aside {
+    display: none;
+    position: relative;
+}
+/* heading 1 */
+.home h1 {
+    color: white;
+}
+/* heading 2 */
+.home h2 {
+    color: rgb(197, 137, 6);
+}
+/* main div */
+.home main{
+    z-index: 3;
+    position: relative;
+}
+
+/* lines container */
+.lines {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 70vw;
+    z-index: 2;
+}
+
+/* each line */
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+/* after each line */
+.line:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+/* first line */
+.line:nth-child(1) {
+    margin-left: -25%;
+}
+
+.line:nth-child(1):after {
+    animation-delay: 2s
+}
+ /* second line */
+.line:nth-child(2) {
+    margin-left: 25%;
+}
+
+.line:nth-child(2):after {
+    animation-delay: 2.5s
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* Parent div home */
+    .home {
+        overflow-y: hidden;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 150px 1fr 150px;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas:
+            "header header header"
+            "leftbar main rightbar"
+        ;
+    }
+
+    /* header */
+    .home header {
+        grid-area: header;
+        position: fixed;
+    }
+
+    /* left side bar */
+    .home section {
+        grid-area: leftbar;
+        display: flex;
+    }
+
+    /* right sidebar */
+    .home aside {
+        grid-area: rightbar;
+        display: flex;
+    }
+
+    /* main content */
+    .home main {
+        grid-area: main;
+    }
+
+
+}

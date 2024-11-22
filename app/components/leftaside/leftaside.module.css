@@ -1,0 +1,27 @@
+/* left sidebar component css */
+/* this section is displayed flex in global.css */
+.leftAside {
+   flex-direction: column-reverse;
+}
+
+.leftAside ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: center;
+   height: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+/* placeholder list item*/
+.leftAside li:last-of-type {
+   height: 50%;
+}
+
+/* placeholder */
+.leftAside li span {
+   height: 100%;
+   width: 8px;
+}
