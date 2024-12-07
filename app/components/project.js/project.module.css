@@ -69,14 +69,14 @@
 }
 
 /* large devices and up */
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:768px) {
 
     /* project */
     .project {
         width: 80%;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
         margin-top: 0;
-        height: 350px;
+        height: 300px;
         border-radius: 15px;
     }
 
@@ -100,17 +100,15 @@
 
     /* every odd project's image container */
     .project:nth-child(odd) .projectImageContainer {
-        border-top: 50px solid rgb(49, 128, 255);
-        border-bottom: 50px solid rgb(49, 128, 255);
-        border-right: 50px solid rgb(49, 128, 255);
+        border-left: 25px solid rgb(49, 128, 255);
+        border-style: groove;
     }
 
 
     /* every even project's image container */
     .project:nth-child(even) .projectImageContainer {
-        border-top: 50px solid rgb(49, 128, 255);
-        border-bottom: 50px solid rgb(49, 128, 255);
-        border-left: 50px solid rgb(49, 128, 255);
+        border-right: 25px solid rgb(49, 128, 255);
+        border-style: groove;
     }
 
     /* hover over project */

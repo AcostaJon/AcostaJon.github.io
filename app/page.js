@@ -42,25 +42,34 @@ export default function Home() {
 
       },
       {
-        key: `a${aKeyValue++}`,
-        id: `windBreakerProject`,
-        title: "Wind Breaker | Weather",
-        description: "A single page application. Here's an easy to use weather app that delivers the latest forecast",
-        languages: ["Reactjs", "Nextjs", "Css"],
-        githubLink: "https://github.com/AcostaJon/Windbreaker",
-        projectLink: "/Windbreaker",
-        apiLink: "https://www.weatherapi.com/",
-      },
-      {
-        key: `a${aKeyValue++}`,
-        id: `employeeDirectoryProject`,
-        title: "Employee Directory | Business App",
-        description: "a single page application that search's through a company's employee directory using search options",
-        languages: ['Html', 'Css', "Javascript"],
-        githubLink: "https://github.com/AcostaJon/techdegree-project-8",
-        projectLink: "/techdegree-project-8",
-        apiLink: "https://randomuser.me/",
+        key: `d${dKeyValue++}`,
+        id: `userDashboardProject`,
+        title: "User Dashboard",
+        description: "A back-end user dashboard, that includes scalable vector graphics and a JavaScript plugin called Chart.js. Chart.js is a javascript library for data visualization.",
+        languages: ['Javascript', 'Html', "Css", "Chart.js"],
+        githubLink: "https://github.com/AcostaJon/user-dashboard",
+        projectLink: "https://acostajon.github.io/user-dashboard/"
       }
+      // {
+      //   key: `a${aKeyValue++}`,
+      //   id: `windBreakerProject`,
+      //   title: "Wind Breaker | Weather",
+      //   description: "A single page application. Here's an easy to use weather app that delivers the latest forecast",
+      //   languages: ["Reactjs", "Nextjs", "Css"],
+      //   githubLink: "https://github.com/AcostaJon/Windbreaker",
+      //   projectLink: "/Windbreaker",
+      //   apiLink: "https://www.weatherapi.com/",
+      // },
+      // {
+      //   key: `a${aKeyValue++}`,
+      //   id: `employeeDirectoryProject`,
+      //   title: "Employee Directory | Business App",
+      //   description: "a single page application that search's through a company's employee directory using search options",
+      //   languages: ['Html', 'Css', "Javascript"],
+      //   githubLink: "https://github.com/AcostaJon/techdegree-project-8",
+      //   projectLink: "/techdegree-project-8",
+      //   apiLink: "https://randomuser.me/",
+      // }
     ]
   );
   

@@ -1,9 +1,7 @@
 // css
 import styles from './project.module.css'
-import { useRouter } from 'next/navigation';
 
 export default function Project(props) {
-  const router = useRouter()
   let keyValue = 0;
   return (
     <>

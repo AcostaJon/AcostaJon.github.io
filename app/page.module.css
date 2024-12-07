@@ -91,16 +91,16 @@
     animation-delay: 2.5s
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
 
     /* Parent div home */
     .home {
         overflow-y: hidden;
         height: 100%;
         display: grid;
-        grid-template-columns: 150px 1fr 150px;
-        grid-template-rows: 100px 1fr;
+        grid-template-columns: 75px 1fr 75px;
+        grid-template-rows: 75px 1fr;
         grid-template-areas:
             "header header header"
             "leftbar main rightbar"

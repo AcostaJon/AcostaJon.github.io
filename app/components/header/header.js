@@ -31,7 +31,7 @@ export default function Header(params) {
 
     return (
         <header className={styles.header} style={{ top: `${scroll}` }}>
-            <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark  ms-3 me-3  ms-lg-5 me-lg-5">
+            <Navbar collapseOnSelect expand="md" className="navbar navbar-dark  ms-3 me-3  ms-lg-5 me-lg-5">
                 <Container fluid>
                     {/* logo */}
                     <Navbar.Brand href="/"><Logo /></Navbar.Brand>

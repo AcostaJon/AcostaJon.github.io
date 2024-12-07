@@ -124,7 +124,7 @@ export default function Main(props) {
                     <h1>Some Things I've Built</h1>
                     <div className={styles.sectionHeadingContainerRule} ></div>
                 </div>
-                <div className={styles.projectContainer}>
+                <div>
                     {
                         props.apiAccordion.map((project) =>
                             <Project key={project.key} id={project.id} title={project.title} description={project.description} languages={project.languages} apiLink={project.apiLink} instagramLink={project.instagramLink} bgImage={project.bgImage} githubLink={project.githubLink} projectLink={project.projectLink} />
@@ -142,7 +142,7 @@ export default function Main(props) {
                     <div className={styles.sectionHeadingContainerRule} ></div>
                 </div>
                 <div className={styles.formContainer}>
-                    <p className='animated-text'>Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+                    <p className='animated-text'>Leave a message and i'll get back to you as soon as possible.</p>
                     {/* <Button href={"mailto:jonacosta86@gmail.com"} target="_blank" title='Contact me' variant="outline-warning">Say Hello</Button>{' '} */}
                     <form ref={formRef} onSubmit={handleSubmit} className='container' >
                         <div className="mb-3">

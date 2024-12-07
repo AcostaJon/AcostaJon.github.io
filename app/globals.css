@@ -133,7 +133,7 @@ body {
 /* all svg images wrapped in a link */
 a svg {
   fill: grey;
-  width: 50px;
+  width: 40px;
 }
 
 a svg:hover {
@@ -212,8 +212,8 @@ a svg:hover {
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width:992px) {
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width:768px) {
 
   /* section 3 in main content: display each accordion at 33% width */
   .accordion {
