@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import LinkedInIcon from '@/app/imgs/linkedinicon'
 import GithubIcon from '@/app/imgs/githubicon'
 import ProfilePic from '@/app/imgs/profilepic';
+import EmailIcon from '@/app/imgs/email';
 // my components
 import Project from '../project.js/project';
 // css
@@ -143,26 +144,13 @@ export default function Main(props) {
                 </div>
                 <div className={styles.formContainer}>
                     <p className='animated-text'>Leave a message and i'll get back to you as soon as possible.</p>
-                    {/* <Button href={"mailto:jonacosta86@gmail.com"} target="_blank" title='Contact me' variant="outline-warning">Say Hello</Button>{' '} */}
-                    <form ref={formRef} onSubmit={handleSubmit} className='container' >
-                        <div className="mb-3">
-                            <input value={name} required onChange={(e) => {
-                                setName(e.target.value);
-                            }}
-                                type="text" name='name' className="form-control" placeholder='Name' />
+                    <div className='row'>
+                        <div className='col'>
+                            <Link href={"mailto:jonacosta86@gmail.com"} target="_blank" title='Email Me'>
+                                <EmailIcon />
+                            </Link>
                         </div>
-                        <div className="mb-3">
-                            <input value={email} required onChange={(e) => {
-                                setEmail(e.target.value)
-                            }}
-                                name='email' type="email" className="form-control" aria-describedby="emailHelp" placeholder='Email' />
-                        </div>
-                        <textarea value={message} required onChange={(e) => {
-                            setMessage(e.target.value)
-                        }}
-                            name='message' className="form-control mb-3" placeholder="Message" id="floatingTextarea2"></textarea>
-                        <button type="submit" className="btn btn-danger">Submit</button>
-                    </form>
+                    </div>
                 </div>
             </div>
 
