@@ -74,11 +74,11 @@ export default function Main(props) {
 
     return (
         <main className={styles.mainContent}>
-            {/* section 1 */}
+            {/* section 1 Introduction*/}
             <div className={styles.section1}>
                 <h2>Hi, my name is</h2>
                 <h1>Jonathan Acosta</h1>
-                <h3>I'm a Web Developer</h3>
+                <h3>I'm a full-stack developer</h3>
                 <Button variant="outline-warning" href='https://reel-buzz.vercel.app/' target='_blank' title='Tv Shows | Movies | Get a preview of the movies and television series you love. '>Latest Application | Reel Buzz </Button>{' '}
             </div>
 
