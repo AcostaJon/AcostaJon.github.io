@@ -23,7 +23,7 @@ export default function Home() {
         key: `a${aKeyValue++}`,
         id: `reelBuzzProject`,
         title: "ReelBuzz | Media Streaming",
-        description: "A single page web application that keeps users informed and up-to-date with the latest trailers for movies and tv shows",
+        description: "A full stack web application powered by Nextjs. ReelBuzz provides users with the latest trailers for movies and tv shows",
         languages: ["Reactjs", "Nextjs", "Css", "ReactPlayer", "MongoDB"],
         githubLink: "https://github.com/AcostaJon/ReelBuzz",
         projectLink: "https://reel-buzz.vercel.app/",
