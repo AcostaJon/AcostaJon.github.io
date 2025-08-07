@@ -1,0 +1,177 @@
+/* poject images are set in global css */
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 30px 0;
+}
+
+/* project image container */
+.projectImageContainer {
+    background-position: top start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+/* project info container */
+.projectInfoContainer {
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: .5px solid rgb(130, 130, 130);
+}
+
+
+/* projectInfoContainer p */
+.projectInfoContainer p {
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 100;
+    color: rgb(202, 201, 201);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* projectInfoContainer h3 */
+.projectInfoContainer h3 {
+    color: rgb(253, 177, 14);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* projectInfoContainer all list container */
+.projectInfoContainer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+/* projectInfoContainer all list items */
+.projectInfoContainer ul li {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+/* programing languages */
+.languagesContainer {
+    color: rgb(253, 177, 14);
+}
+
+/* links */
+.linksContainer a {
+    color: white;
+}
+
+/* hover on links */
+.linksContainer a:hover {
+    color: rgb(29, 197, 252);
+}
+
+/* large devices and up */
+@media only screen and (min-width:768px) {
+
+    /* project */
+    .project {
+        width: 80%;
+        margin-bottom: 100px;
+        margin-top: 0;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    /* project image container */
+    .projectImageContainer {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform .2s;
+        /* Animation */
+    }
+
+    /* every even project*/
+    .project:nth-child(even) {
+        margin-left: auto;
+    }
+
+    /* every odd project's image container */
+    .project:nth-child(odd) .projectImageContainer {
+        border-left: 25px solid rgb(49, 128, 255);
+        border-style: groove;
+    }
+
+
+    /* every even project's image container */
+    .project:nth-child(even) .projectImageContainer {
+        border-right: 25px solid rgb(49, 128, 255);
+        border-style: groove;
+    }
+
+    /* hover over project */
+    .projectImageContainer:hover {
+        transform: scale(.9);
+        cursor: pointer;
+    }
+
+    /* project information container */
+    .projectInfoContainer {
+        position: absolute;
+        width: 325px;
+        background-color: rgba(30, 30, 30, 0.948);
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 15px;
+    }
+
+    /* every odd project info container */
+    .project:nth-child(odd) .projectInfoContainer {
+        right: 0;
+        text-align: start;
+    }
+
+    .project:nth-child(odd) .projectInfoContainer ul {
+        justify-content: start;
+    }
+
+    /* every even project info container */
+    .project:nth-child(even) .projectInfoContainer {
+        left: 0;
+        text-align: start;
+    }
+    /* every even project info container's ul */
+    .project:nth-child(even) .projectInfoContainer ul {
+        justify-content: start;
+    }
+
+    /* projectInfoContainer h3 */
+    .projectInfoContainer h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    /* project p */
+    .projectInfoContainer p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* project span */
+    .projectInfoContainer span {
+        margin-bottom: 15px;
+    }
+
+    /* Languages container */
+    .languagesContainer {
+        margin-bottom: 8px;
+    }
+
+    /* Languages container list items*/
+    .langugesContainer li {
+        font-size: 14px;
+    }
+
+}
