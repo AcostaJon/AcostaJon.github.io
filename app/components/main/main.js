@@ -1,7 +1,7 @@
 'use client'
 // react components
 import Link from 'next/link';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect } from 'react';
 // bootstrap components
 import Button from 'react-bootstrap/Button';
 // image components
@@ -15,43 +15,11 @@ import Project from '../project.js/project';
 import styles from './main.module.css'
 
 export default function Main(props) {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const formRef = useRef(null);
 
     useEffect(() => {
         // invoke function
         handleIntersectionScroll()
     })
-
-    const handleSubmit = async (e) => {
-        // do not refresh page
-        e.preventDefault();
-        // fetch post request
-        const response = await fetch('/api/sendGrid', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: name,
-                email: email,
-                message: message,
-            })
-        });
-
-        // Reset the form
-        formRef.current.reset();
-        formRef.current[0].value = ''
-        formRef.current[1].value = ''
-        formRef.current[2].value = ''
-
-        alert("Form submitted")
-        await response.json()
-        console.log(response)
-
-    }
 
     // apply animation when scrolling
     function handleIntersectionScroll() {
@@ -106,10 +74,13 @@ export default function Main(props) {
                             <li>Javascript</li>
                             <li>Sass</li>
                             <li>Bootstrap</li>
+                            <li>React.js</li>
                         </ul>
                         <ul>
-                            <li>React.js</li>
+                            <li>Express.js</li>
                             <li>Next.js</li>
+                            <li>Python</li>
+                            <li>Flask</li>
                             <li>MongoDB</li>
                             <li>WordPress</li>
                         </ul>
@@ -134,7 +105,7 @@ export default function Main(props) {
                 </div>
             </div>
 
-            {/* section 4 - whats next */}
+            {/* section 4 - Contact*/}
             <div className={styles.section4} id='Contact'>
                 {/* heading */}
                 <div className={styles.sectionHeadingContainer}>

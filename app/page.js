@@ -23,7 +23,7 @@ export default function Home() {
         key: `a${aKeyValue++}`,
         id: `reelBuzzProject`,
         title: "ReelBuzz | Media Streaming",
-        description: "A full stack web application powered by Nextjs. ReelBuzz provides users with the latest trailers for movies and tv shows",
+        description: "Stay effortlessly up to speed with everything new in entertainment. ReelBuzz brings the freshest movie and TV game-changer trailers right to your fingertips—whether you're tracking the latest blockbuster, binge-worthy series, or indie gem",
         languages: ["Reactjs", "Nextjs", "Css", "ReactPlayer", "MongoDB"],
         githubLink: "https://github.com/AcostaJon/ReelBuzz",
         projectLink: "https://reel-buzz.vercel.app/",
@@ -34,7 +34,7 @@ export default function Home() {
         key: `a${aKeyValue++}`,
         id: `twoMuchTwoSayProject`,
         title: "2much2say | Podcast",
-        description: "A website for a podcaster... 'A Podcast for all, You listen we talk!',  is there motto. Check out this podcast",
+        description: "Welcome to the official site of 2much2say, a vibrant hub where storytelling, insight, and community converge",
         languages: ["Reactjs", "Nextjs", "Bootstrap"],
         githubLink: "https://github.com/AcostaJon/2much2say",
         projectLink: "https://2much2say.vercel.app/",
@@ -45,7 +45,7 @@ export default function Home() {
         key: `d${dKeyValue++}`,
         id: `userDashboardProject`,
         title: "User Dashboard",
-        description: "A back-end user dashboard, that includes scalable vector graphics and a JavaScript plugin called Chart.js. Chart.js is a javascript library for data visualization",
+        description: "Turn raw numbers into clarity. This is a smart, intuitive dashboard app that gives users a crystal-clear view of their data through sleek, interactive graphs and charts. Designed to be as functional as it is elegant.",
         languages: ['Javascript', 'Html', "Css", "Chart.js"],
         githubLink: "https://github.com/AcostaJon/user-dashboard",
         projectLink: "https://acostajon.github.io/user-dashboard/"
@@ -54,22 +54,20 @@ export default function Home() {
         key: `a${aKeyValue++}`,
         id: `windBreakerProject`,
         title: "WindBreaker | Weather",
-        description: "Easy to use weather web app that delivers the latest forecast. Search by city, state, or zipcode",
-        languages: ["Reactjs", "Nextjs", "Bootstrap"],
+        description: "Stay ahead of the elements with WindBreaker, the ultimate weather app designed to provide precise, real-time forecasts tailored to your exact location",
+        languages: ["Reactjs", "Express.js", "Css"],
         githubLink: "https://github.com/AcostaJon/Windbreaker",
-        projectLink: "https://windbreaker-eight.vercel.app/",
+        projectLink: "https://windbreaker-seven.vercel.app/",
         apiLink: "https://www.weatherapi.com/",
       },
-      // {
-      //   key: `a${aKeyValue++}`,
-      //   id: `employeeDirectoryProject`,
-      //   title: "Employee Directory | Business App",
-      //   description: "a single page application that search's through a company's employee directory using search options",
-      //   languages: ['Html', 'Css', "Javascript"],
-      //   githubLink: "https://github.com/AcostaJon/techdegree-project-8",
-      //   projectLink: "/techdegree-project-8",
-      //   apiLink: "https://randomuser.me/",
-      // }
+      {
+        key: `a${aKeyValue++}`,
+        id: `foreclosureClinicProject`,
+        title: "Foreclosurec Clinic | Consulting",
+        description: "A dedicated team of experts supporting homeowners facing the challenges of foreclosure.",
+        languages: ['Wordpress'],
+        projectLink: "https://foreclosureclinic.com/",
+      }
     ]
   );
   

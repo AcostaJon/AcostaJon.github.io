@@ -163,8 +163,8 @@ a svg:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/windBreaker.png');
 }
 
-#employeeDirectoryProject div:first-of-type {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/employeedir.png');
+#foreclosureClinicProject div:first-of-type {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('../public/projectImages/foreclosureclinic.png');
 }
 
 #businessConsultProject div:first-of-type {
