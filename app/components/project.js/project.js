@@ -27,7 +27,7 @@ export default function Project(props) {
               {props.apiLink ? <a href={props.apiLink} target='_blank'>API</a> : ""}
             </li>
             <li>
-              <a href={props.githubLink} target='_blank' title='View Code'>View Code</a>
+              {props.githubLink ? <a href={props.githubLink} target='_blank' title='View Code'>View Code</a> : ""}
             </li>
             <li>
               <a href={props.projectLink} target='_blank' title='View Project'>LIVE APP</a>

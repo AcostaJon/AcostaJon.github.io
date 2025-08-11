@@ -64,7 +64,7 @@ export default function Main(props) {
                 </div>
                 <div className='animated-text'>
                     <p>Full stack developer with extensive knowledge in JavaScript, React, and all things web development.
-                        My passion for web development is fueled by the mix of creativity, logic, technology, and the never-ending pursuit of new knowledge.
+                        My passion for programming is fueled by the mix of creativity, logic, technology, and the never-ending pursuit of new knowledge.
                     </p>
                     <p>Here are a few technologies I've been working with:</p>
                     <div className={styles.section2LangContainer}>
@@ -99,7 +99,7 @@ export default function Main(props) {
                 <div>
                     {
                         props.apiAccordion.map((project) =>
-                            <Project key={project.key} id={project.id} title={project.title} description={project.description} languages={project.languages} apiLink={project.apiLink} instagramLink={project.instagramLink} bgImage={project.bgImage} githubLink={project.githubLink} projectLink={project.projectLink} />
+                            <Project key={project.key} id={project.id} title={project.title} description={project.description} languages={project.languages} apiLink={project.apiLink} bgImage={project.bgImage} githubLink={project.githubLink} projectLink={project.projectLink} />
                         )
                     }
                 </div>

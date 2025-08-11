@@ -23,7 +23,7 @@ export default function Home() {
         key: `a${aKeyValue++}`,
         id: `reelBuzzProject`,
         title: "ReelBuzz | Media Streaming",
-        description: "Stay effortlessly up to speed with everything new in entertainment. ReelBuzz brings the freshest movie and TV game-changer trailers right to your fingertips—whether you're tracking the latest blockbuster, binge-worthy series, or indie gem",
+        description: "ReelBuzz brings the freshest movie and TV game-changer trailers right to your fingertips—whether you're tracking the latest blockbuster, binge-worthy series, or indie gem",
         languages: ["Reactjs", "Nextjs", "Css", "ReactPlayer", "MongoDB"],
         githubLink: "https://github.com/AcostaJon/ReelBuzz",
         projectLink: "https://reel-buzz.vercel.app/",
@@ -63,7 +63,7 @@ export default function Home() {
       {
         key: `a${aKeyValue++}`,
         id: `foreclosureClinicProject`,
-        title: "Foreclosurec Clinic | Consulting",
+        title: "Foreclosure Clinic | Consulting",
         description: "A dedicated team of experts supporting homeowners facing the challenges of foreclosure.",
         languages: ['Wordpress'],
         projectLink: "https://foreclosureclinic.com/",
