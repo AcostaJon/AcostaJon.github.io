@@ -114,7 +114,7 @@ export default function Main(props) {
                     <div className={styles.sectionHeadingContainerRule} ></div>
                 </div>
                 <div className={styles.formContainer}>
-                    <p className='animated-text'>Leave a message and i'll get back to you as soon as possible.</p>
+                    <p className='animated-text'>Leave a message and I'll get back to you as soon as possible.</p>
                     <div className='row'>
                         <div className='col'>
                             <Link href={"mailto:jonacosta86@gmail.com"} target="_blank" title='Email Me'>
