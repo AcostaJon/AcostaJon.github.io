@@ -19,4 +19,4 @@ A modern, responsive single-page developer portfolio built to showcase technical
 - **Framework:** [Next.js](https://nextjs.org/) (React)
 - **Styling & UI:** [Bootstrap](https://getbootstrap.com/) & Custom CSS
 - **Icons:** [Bootstrap Icons](https://icons.getbootstrap.com/)
-- **Deployment:** Vercel
+- **Deployment:** Vercel (https://devja.vercel.app/)
