@@ -34,7 +34,7 @@ export default function Home() {
         key: `a${aKeyValue++}`,
         id: `twoMuchTwoSayProject`,
         title: "2much2say | Podcast",
-        description: "Welcome to the official site of 2much2say, a vibrant hub where storytelling, insight, and community converge",
+        description: "A fast, modern web application designed for seamless audio streaming, episode discovery, and creator management. Built for crisp audio playback, intuitive user navigation, and effortless content distribution.",
         languages: ["Reactjs", "Nextjs", "Bootstrap"],
         githubLink: "https://github.com/AcostaJon/2much2say",
         projectLink: "https://2much2say.vercel.app/",
