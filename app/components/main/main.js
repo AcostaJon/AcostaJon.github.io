@@ -46,7 +46,7 @@ export default function Main(props) {
             <div className={styles.section1}>
                 <h2>Hi, my name is</h2>
                 <h1>Jonathan Acosta</h1>
-                <h3>I'm a Full-Stack Developer</h3>
+                <h3>I’m a Full Stack JavaScript Developer. I bridge design and logic to turn ideas into polished digital experiences.</h3>
                 <Button variant="outline-warning" href='https://reel-buzz.vercel.app/' target='_blank' title='Tv Shows | Movies | Get a preview of the movies and television series you love. '>Latest Application | Reel Buzz </Button>{' '}
             </div>
 
@@ -63,26 +63,17 @@ export default function Main(props) {
                     <ProfilePic />
                 </div>
                 <div className='animated-text'>
-                    <p>Full stack developer with extensive knowledge in JavaScript, React, and all things web development.
-                        My passion for programming is fueled by the mix of creativity, logic, technology, and the never-ending pursuit of new knowledge.
+                    <p>
+                        My core stack includes HTML5, CSS3/Sass, JavaScript, Bootstrap, React.js, Express.js, Next.js, and MongoDB. I also work with WordPress for dynamic content management and have experience using Python and Flask.
+                        Whether engineering back-end APIs or crafting seamless user interfaces, I’m dedicated to writing clean, performant code that brings real value to users.
                     </p>
+                    <h2 className='mt-3'>Technologies & Tools</h2>
                     <p>Here are a few technologies I've been working with:</p>
                     <div className={styles.section2LangContainer}>
                         <ul>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>Javascript</li>
-                            <li>Sass</li>
-                            <li>Bootstrap</li>
-                            <li>React.js</li>
-                        </ul>
-                        <ul>
-                            <li>Express.js</li>
-                            <li>Next.js</li>
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>MongoDB</li>
-                            <li>WordPress</li>
+                            <li>Front-End: HTML5, CSS3 / Sass, JavaScript (ES6+), Bootstrap, React.js, Next.js</li>
+                            <li>Back-End & Databases: Express.js, Node.js, Python, Flask, MongoDB</li>
+                            <li>CMS & Platforms: WordPress</li>
                         </ul>
                     </div>
                 </div>

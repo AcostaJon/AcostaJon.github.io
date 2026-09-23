@@ -2,7 +2,9 @@
 .project {
     display: flex;
     flex-direction: column;
-    margin: 20px 0 30px 0;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: .5px solid rgb(130, 130, 130);
 }
 
 /* project image container */
@@ -17,7 +19,6 @@
 .projectInfoContainer {
     text-align: center;
     margin-top: 10px;
-    border-bottom: .5px solid rgb(130, 130, 130);
 }
 
 
@@ -26,7 +27,7 @@
     margin: 0 auto;
     width: 80%;
     font-weight: 100;
-    color: rgb(202, 201, 201);
+    color: whitesmoke;
     font-size: 16px;
     margin-bottom: 8px;
 }
@@ -74,10 +75,9 @@
     /* project */
     .project {
         width: 80%;
-        margin-bottom: 100px;
-        margin-top: 0;
+        margin-bottom: 75px;
         height: 300px;
-        border-radius: 15px;
+        border: none;
     }
 
     /* project image container */
@@ -89,8 +89,8 @@
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
+         /* Animation */
         transition: transform .2s;
-        /* Animation */
     }
 
     /* every even project*/
